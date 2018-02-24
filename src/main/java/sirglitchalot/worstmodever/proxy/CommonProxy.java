@@ -1,8 +1,6 @@
-package sirglitchalot.worstmodever.proxy;
+package sirglitchalot.bestmodever.proxy;
 
-public class CommonProxy {
+public interface CommonProxy {
 
-	public void registerRenders() {
-		
-	}
+	public void registerRenders();
 }
