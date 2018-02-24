@@ -1,15 +1,12 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
+  "modid": "wme",
+  "name": "Worst Mod Ever",
+  "description": "Creating my first mod",
+  "version": "1.0",
+  "mcversion": "1.10.2",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
+  "authorList": ["SirGlitchAlot"],
   "screenshots": [],
   "dependencies": []
 }
