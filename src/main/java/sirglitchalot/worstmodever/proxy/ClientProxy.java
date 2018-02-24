@@ -1,9 +1,13 @@
-package sirglitchalot.worstmodever.proxy;
+package sirglitchalot.bestmodever.proxy;
 
-public class ClientProxy extends CommonProxy{
+import sirglitchalot.bestmodever.init.ModItems;
+
+public class ClientProxy implements CommonProxy{
 
 	@Override
 	public void registerRenders() {
-
+		
+		ModItems.registryRenders();
 	}
+
 }

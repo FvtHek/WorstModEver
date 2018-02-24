@@ -1,9 +1,9 @@
-package sirglitchalot.worstmodever.util;
+package sirglitchalot.bestmodever.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import sirglitchalot.worstmodever.Reference;
+import sirglitchalot.bestmodever.Reference;
 
 public class Utils {
 
