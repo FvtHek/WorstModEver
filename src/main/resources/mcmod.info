@@ -2,9 +2,9 @@
 {
   "modid": "wme",
   "name": "Worst Mod Ever",
-  "description": "Creating my first mod",
-  "version": "1.0",
-  "mcversion": "1.10.2",
+  "description": "Creating the worst mod ever.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
   "updateUrl": "",
   "authorList": ["SirGlitchAlot"],
   "screenshots": [],

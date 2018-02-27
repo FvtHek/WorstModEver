@@ -1,0 +1,5 @@
+#Creative Tabs
+itemGroup.tab_core=Worst Mod Ever
+
+@Items
+item.test_item.name=Test Item
