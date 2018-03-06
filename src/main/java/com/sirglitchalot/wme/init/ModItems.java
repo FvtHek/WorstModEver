@@ -1,7 +1,8 @@
-package com.sirglitchalot.wme.item;
+package com.sirglitchalot.wme.init;
 
 import com.sirglitchalot.wme.Reference;
 import com.sirglitchalot.wme.WorstModEver;
+import com.sirglitchalot.wme.item.ItemTestItem;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -20,9 +21,12 @@ public class ModItems {
 		registerItems();
 	}
 	
+	public static void registerItem(Item item, String name) {
+		GameRegistry.register(item, new ResourceLocation(Reference.MODID, name));
+	}
+	
 	public static void registerItems() {
-		
-		GameRegistry.register(test, new ResourceLocation(Reference.MODID, "test_item"));
+		registerItem(test, "test_item");
 	}
 	
 	public static void registerRenders() {

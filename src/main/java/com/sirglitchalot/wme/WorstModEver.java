@@ -1,6 +1,7 @@
 package com.sirglitchalot.wme;
 
-import com.sirglitchalot.wme.item.ModItems;
+import com.sirglitchalot.wme.init.ModBlocks;
+import com.sirglitchalot.wme.init.ModItems;
 import com.sirglitchalot.wme.proxy.CommonProxy;
 import com.sirglitchalot.wme.tabs.CreativeTabCore;
 
@@ -28,6 +29,7 @@ public class WorstModEver {
 		tabCore = new CreativeTabCore(CreativeTabs.getNextID(), "tab_core");
 		proxy.preInit(event);
 		ModItems.preInit();
+		ModBlocks.preInit();
 	}
 	
 	@EventHandler

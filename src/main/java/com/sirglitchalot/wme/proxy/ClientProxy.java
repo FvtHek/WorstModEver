@@ -1,6 +1,7 @@
 package com.sirglitchalot.wme.proxy;
 
-import com.sirglitchalot.wme.item.ModItems;
+import com.sirglitchalot.wme.init.ModBlocks;
+import com.sirglitchalot.wme.init.ModItems;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -16,6 +17,7 @@ public class ClientProxy extends CommonProxy{
 	@Override
 	public void init(FMLInitializationEvent event) {
 		ModItems.registerRenders();
+		ModBlocks.registerRenders();
 	}
 
 	@Override
