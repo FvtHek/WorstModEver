@@ -9,8 +9,8 @@ public class BlockTestBlock extends Block{
 
 	public BlockTestBlock(Material materialIn, String name) {
 		super(materialIn);
-		this.setCreativeTab(WorstModEver.tabCore);
-		this.setUnlocalizedName(name);
+		setCreativeTab(WorstModEver.tabCore);
+		setUnlocalizedName(name);
 	}
 
 }

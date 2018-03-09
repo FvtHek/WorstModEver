@@ -2,6 +2,7 @@ package com.sirglitchalot.wme.init;
 
 import com.sirglitchalot.wme.Reference;
 import com.sirglitchalot.wme.WorstModEver;
+import com.sirglitchalot.wme.block.BlockTestBlock;
 import com.sirglitchalot.wme.item.ItemTestItem;
 
 import net.minecraft.block.Block;
@@ -19,7 +20,7 @@ public class ModBlocks {
 	
 	public static void preInit() {
 		
-		testBlock = new Block(Material.ROCK);
+		testBlock = new BlockTestBlock(Material.ROCK, "test_block");
 		
 		registerBlocks();
 	}
