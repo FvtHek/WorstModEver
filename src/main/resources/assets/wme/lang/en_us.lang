@@ -3,6 +3,7 @@ itemGroup.tab_core=Worst Mod Ever
 
 #Items
 item.test_item.name=Test Item
+item.bagel_item.name=Bagel
 
 #Blocks
 tile.test_block.name=Test Block

@@ -4,9 +4,9 @@ import com.sirglitchalot.wme.WorstModEver;
 
 import net.minecraft.item.Item;
 
-public class ItemTestModelItem extends Item{
+public class ItemBagel extends Item{
 	
-	public ItemTestModelItem(String name) {
+	public ItemBagel(String name) {
 		setUnlocalizedName(name);
 		setCreativeTab(WorstModEver.tabCore);
 		setMaxStackSize(256);

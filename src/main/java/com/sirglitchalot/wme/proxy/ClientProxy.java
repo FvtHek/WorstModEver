@@ -17,6 +17,7 @@ public class ClientProxy extends CommonProxy{
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		OBJLoader.INSTANCE.addDomain(Reference.MODID);
+		registerModel(ModItems.bagel);
 	}
 	
 	public void registerModel(Item item) {
