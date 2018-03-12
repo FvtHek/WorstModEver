@@ -17,11 +17,15 @@ public class ClientProxy extends CommonProxy{
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		OBJLoader.INSTANCE.addDomain(Reference.MODID);
-		registerModel(ModItems.bagel);
+		registerModels();
 	}
 	
 	public void registerModel(Item item) {
-		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(Reference.MODID.toLowerCase() + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+	}
+	
+	public void registerModels() {
+		registerModel(ModItems.bagel);
 	}
 	
 	@Override
