@@ -1,6 +1,7 @@
 package com.sirglitchalot.wme;
 
 import com.sirglitchalot.wme.init.ModBlocks;
+import com.sirglitchalot.wme.init.ModCrafting;
 import com.sirglitchalot.wme.init.ModItems;
 import com.sirglitchalot.wme.proxy.CommonProxy;
 import com.sirglitchalot.wme.tabs.CreativeTabCore;
@@ -35,6 +36,8 @@ public class WorstModEver {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
+		
+		ModCrafting.register();
 	}
 	
 	@EventHandler

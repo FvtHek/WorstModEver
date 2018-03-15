@@ -19,7 +19,6 @@ public class ItemTestItem extends Item{
 	public ItemTestItem(String unlocalizedName) {
 		setUnlocalizedName(unlocalizedName);
 		setCreativeTab(WorstModEver.tabCore);
-		setMaxStackSize(256);
 	}
 
 	@Override
