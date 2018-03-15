@@ -1,15 +1,12 @@
 package com.sirglitchalot.wme.init;
 
 import com.sirglitchalot.wme.Reference;
-import com.sirglitchalot.wme.WorstModEver;
 import com.sirglitchalot.wme.item.ItemTestItem;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {

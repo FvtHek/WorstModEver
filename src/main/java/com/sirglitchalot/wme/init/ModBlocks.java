@@ -1,12 +1,9 @@
 package com.sirglitchalot.wme.init;
 
 import com.sirglitchalot.wme.Reference;
-import com.sirglitchalot.wme.WorstModEver;
 import com.sirglitchalot.wme.block.BlockTestBlock;
-import com.sirglitchalot.wme.item.ItemTestItem;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
