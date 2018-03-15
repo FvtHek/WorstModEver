@@ -33,7 +33,7 @@ public class ModItems {
 	}
 	
 	public static void registerRenders() {
-		registerRender(test);
+		//registerRender(test);
 		
 	}
 	

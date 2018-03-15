@@ -28,15 +28,14 @@ public class WorstModEver {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		tabCore = new CreativeTabCore(CreativeTabs.getNextID(), "tab_core");
-		proxy.preInit(event);
 		ModItems.preInit();
 		ModBlocks.preInit();
+		proxy.preInit(event);
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
-		
 		ModCrafting.register();
 	}
 	
