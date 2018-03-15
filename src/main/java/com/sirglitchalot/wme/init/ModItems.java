@@ -3,24 +3,23 @@ package com.sirglitchalot.wme.init;
 import com.sirglitchalot.wme.Reference;
 import com.sirglitchalot.wme.WorstModEver;
 import com.sirglitchalot.wme.item.ItemTestItem;
-import com.sirglitchalot.wme.item.ItemBagel;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
 	public static Item test;
-	public static Item bagel;
 	
 	
 	public static void preInit() {
 		
-		test = new ItemTestItem("test_item");;
-		bagel = new ItemBagel("bagel_item");
+		test = new ItemTestItem("test_item");
 		
 		registerItems();
 	}
@@ -31,7 +30,6 @@ public class ModItems {
 	
 	public static void registerItems() {
 		registerItem(test, "test_item");
-		registerItem(bagel, "bagel_item");
 	}
 	
 	public static void registerRenders() {
@@ -40,6 +38,6 @@ public class ModItems {
 	}
 	
 	public static void registerRender(Item item) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
 }

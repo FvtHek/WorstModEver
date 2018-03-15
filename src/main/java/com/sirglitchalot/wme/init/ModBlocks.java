@@ -20,7 +20,7 @@ public class ModBlocks {
 	
 	public static void preInit() {
 		
-		testBlock = new BlockTestBlock(Material.ROCK, "test_block");
+		testBlock = new BlockTestBlock("test_block");
 		
 		registerBlocks();
 	}
@@ -40,7 +40,6 @@ public class ModBlocks {
 	}
 	
 	public static void registerRender(Block block) {
-		Item item = Item.getItemFromBlock(block);
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
 	}
 }
